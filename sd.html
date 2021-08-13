@@ -1,0 +1,64 @@
+<html>
+
+<head>
+    <title>Tetris By Kshitij</title>
+    <link href="style.css" rel="stylesheet" type='text/css'>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #score{
+            display:inline-block;
+        }
+        nav{
+            background-color: black;
+            font-weight: bold;
+            font-family: cursive;
+            font-size:1.8rem;
+            text-align: center;
+            text-decoration:solid dashed;
+            text-shadow: 2px;
+            color:#fff;
+            padding: 10px;
+            
+        }
+        canvas{
+            
+            display: block;
+            margin:28px auto 12px auto;
+            border: 4px solid;
+            border-color: white;
+            align-items: center;
+            align-self: center;
+            border-style: dotted solid;
+            
+            
+        }
+        
+        #score-div{
+            text-align: center;
+            background-color:black;
+            width: 22%;
+            margin: 0px auto 0px auto;
+            padding: 8px;
+            color: white;
+            font-size: 2.0rem;
+            font-family: cursive;
+        }
+    </style>
+
+</head>
+
+<body>
+    
+    <nav>Let's have some fun</nav>
+    <canvas id='tetris' width="300" height="500"></canvas>
+    <div id="score-div">
+        Score : <div id='score'>0</div>
+    </div>
+    <script src="tetrominoes.js"></script>
+    <script src="tetris.js"></script>
+</body>
+
+</html>
